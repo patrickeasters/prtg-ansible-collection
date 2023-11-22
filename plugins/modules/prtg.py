@@ -204,8 +204,9 @@ def main():
         check_resp.close()
 
         # check to see if device exists
-        if check_result['devices']:
-            device_id = dev['objid']
+        for dev in check_result['devices']:
+            if check_result['devices']:
+                device_id = dev['objid']
 
     
     # setup changed variable
